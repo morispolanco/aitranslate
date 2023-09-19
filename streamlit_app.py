@@ -26,14 +26,14 @@ def translate_text(text, lang_from, lang_to, secret_key):
 st.title("AITranslate")
 
 # Agregar título y texto en la parte superior de la columna
-st.sidebar.markdown("# La mejor traducción automática del mundo")
-st.sidebar.markdown("Las redes neuronales de AITranslate son capaces de captar hasta los más mínimos matices y reproducirlos en la traducción a diferencia de cualquier otro servicio. Para evaluar la calidad de nuestros modelos de traducción automática, realizamos regularmente pruebas a ciegas. En las pruebas a ciegas, los traductores profesionales seleccionan la traducción más precisa sin saber qué empresa la produjo. AITranslate supera a la competencia por un factor de 3:1.")
+st.markdown("# La mejor traducción automática del mundo")
+st.markdown("Las redes neuronales de AITranslate son capaces de captar hasta los más mínimos matices y reproducirlos en la traducción a diferencia de cualquier otro servicio. Para evaluar la calidad de nuestros modelos de traducción automática, realizamos regularmente pruebas a ciegas. En las pruebas a ciegas, los traductores profesionales seleccionan la traducción más precisa sin saber qué empresa la produjo. AITranslate supera a la competencia por un factor de 3:1. ")
 
 # Campo de entrada para la clave API
-secret_key = st.sidebar.text_input("Ingrese su clave API de AITranslate", type="password")
+secret_key = st.text_input("Ingrese su clave API de AITranslate", type="password")
 
 # Explicación sobre cómo obtener la clave API
-st.sidebar.markdown("Para obtener la clave API de AI Translate, por favor envíe un correo electrónico a info@editorialarje.com.")
+st.markdown("Para obtener la clave API de AI Translate, por favor envíe un correo electrónico a info@editorialarje.com.")
 
 # Cargar archivo PDF
 uploaded_file = st.file_uploader("Cargar archivo PDF", type=["pdf"])
