@@ -78,4 +78,4 @@ if st.button("Traducir"):
         else:
             st.error("Error al traducir el texto. Verifique su clave API o intente nuevamente.")
     else:
-        st.error("Por favor, ingrese su clave API de AI Translate y cargue un archivo PDF.
+        st.error("Por favor, ingrese su clave API de AI Translate y cargue un archivo PDF.)
